@@ -56,7 +56,16 @@ sign-language-recognition/
    cd sign-language-recognition
    ```
 
-2. Install dependencies:
+2. Install dependencies using uv (recommended):
+   ```bash
+   # Install uv if not already installed
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   
+   # Create virtual environment and install dependencies
+   uv sync
+   ```
+
+   Or using pip:
    ```bash
    pip install -r requirements.txt
    ```
